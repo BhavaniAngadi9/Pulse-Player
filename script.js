@@ -1,27 +1,45 @@
 const songs = [
   {
     src: "tracks/song1.mp3",
-    title: "Song 1",
-    artist: "Artist 1",
-    cover: "musiclogo1.png!f305cw",
+    title: "Milana Movie",
+    artist: "Sonu Nigam",
+    cover: "images/image1.jpg",
   },
   {
     src: "tracks/song2.mp3",
-    title: "Song 2",
-    artist: "Artist 2",
-    cover: "musiclogo2.jpg",
+    title: "Bandish Bandits Movie",
+    artist: "Dhananjay Mhaskar",
+    cover: "images/image2.jpg",
   },
   {
     src: "tracks/song3.mp3",
-    title: "Song 3",
-    artist: "Artist 3",
-    cover: "musiclogo3.webp",
+    title: "Vibe Undi",
+    artist: "Arman Malik",
+    cover: "images/image3.jpg",
   },
   {
     src: "tracks/song4.mp3",
-    title: "Song 4",
-    artist: "Artist 4",
-    cover: "musiclogo3.webp",
+    title: "Mahanati Movie",
+    artist: "Dr.Charulatha Mani",
+    cover: "images/image4.jpg",
+  },
+  {
+    src: "tracks/song6.mp3",
+    title: "Om Bheem Bush Movie",
+    artist: "Arjit Singh",
+    cover: "images/ArjithSingh.jpg",
+  },
+  {
+    src: "tracks/song7.mp3",
+    title: "Subramaniapuram Movie",
+    artist: "Bellie Raj ",
+    cover: "images/image7.jpg",
+  },
+  {
+    src: "tracks/song8.mp3",
+    title: "Vishwaroopam Movie",
+    artist: "Shankar Mahadevan",
+    cover: "images/image8.jpg",
   },
 ];
 

@@ -1,50 +1,87 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PulsePlayer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <img src="musiclogo3.webp" class="logo" alt="PulsePlayer logo" />
+    <div class="background-glow"></div>
 
-      <h1>PulsePlayer</h1>
+    <header class="app-header">
+      <div class="brand">
+        <img src="images/musiclogo2.jpg" class="logo" alt="PulsePlayer logo" />
+        <div class="brand-text">
+          <h1>PulsePlayer</h1>
+          <p class="tagline">Feel the beat. Own the vibe.</p>
+        </div>
+      </div>
     </header>
 
-    <div class="player-container">
-      <div class="album-section">
-        <img id="cover" src="musiclogo3.webp" class="album-cover" alt="Album cover" />
+    <main class="layout">
+      <section class="player-container">
+        <div class="album-section">
+          <div class="album-cover-wrapper">
+            <img
+              id="cover"
+              src="images/musiclogo3.webp"
+              class="album-cover"
+              alt="Album cover"
+            />
+          </div>
 
-        <h2 id="title">Song Title</h2>
-
-        <p id="artist">Artist</p>
-      </div>
-
-      <div class="controls">
-        <audio id="audio"></audio>
-        <input type="range" id="progress" value="0" />
-
-        <div class="buttons">
-          <button id="prev">⏮</button>
-          <button id="play">▶</button>
-          <button id="next">⏭</button>
+          <div class="track-info">
+            <h2 id="title">Song Title</h2>
+            <p id="artist">Artist</p>
+          </div>
         </div>
 
-        <div class="volume">
-          🔊
-          <input type="range" id="volume" min="0" max="1" step="0.01" />
-        </div>
-      </div>
+        <div class="controls">
+          <audio id="audio"></audio>
 
-      <div class="playlist">
+          <div class="progress-wrapper">
+            <input type="range" id="progress" value="0" />
+          </div>
+
+          <div class="buttons">
+            <button id="prev" class="icon-button" aria-label="Previous track">
+              ⏮
+            </button>
+            <button id="play" class="icon-button" aria-label="Play / Pause">
+              ▶
+            </button>
+            <button id="next" class="icon-button" aria-label="Next track">
+              ⏭
+            </button>
+          </div>
+
+          <div class="volume">
+            <span class="volume-icon">🔊</span>
+            <input
+              type="range"
+              id="volume"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.5"
+            />
+          </div>
+        </div>
+      </section>
+
+      <aside class="playlist">
         <h3>Playlist</h3>
-
         <ul id="playlist"></ul>
-      </div>
-    </div>
+      </aside>
+    </main>
 
     <script src="script.js"></script>
   </body>
