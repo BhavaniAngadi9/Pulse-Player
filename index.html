@@ -24,6 +24,12 @@
           <p class="tagline">Feel the beat. Own the vibe.</p>
         </div>
       </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="ghost-button" type="button">
+          Light mode
+        </button>
+      </div>
     </header>
 
     <main class="layout">
@@ -49,9 +55,16 @@
 
           <div class="progress-wrapper">
             <input type="range" id="progress" value="0" />
+            <div class="time-row">
+              <span id="current-time">0:00</span>
+              <span id="total-time">0:00</span>
+            </div>
           </div>
 
           <div class="buttons">
+            <button id="shuffle" class="icon-button" aria-label="Shuffle">
+              🔀
+            </button>
             <button id="prev" class="icon-button" aria-label="Previous track">
               ⏮
             </button>
@@ -60,6 +73,9 @@
             </button>
             <button id="next" class="icon-button" aria-label="Next track">
               ⏭
+            </button>
+            <button id="repeat" class="icon-button" aria-label="Repeat mode">
+              🔁
             </button>
           </div>
 
@@ -74,6 +90,14 @@
               value="0.5"
             />
           </div>
+
+          <div class="visualizer" aria-hidden="true">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </section>
 
@@ -82,6 +106,33 @@
         <ul id="playlist"></ul>
       </aside>
     </main>
+
+    <div class="mini-player" id="mini-player">
+      <button id="mini-toggle" class="mini-toggle" type="button" aria-label="Toggle mini player">
+        ⤢
+      </button>
+      <div class="mini-cover">
+        <img id="mini-cover" src="images/musiclogo3.webp" alt="Current track cover" />
+      </div>
+      <div class="mini-track-info">
+        <div id="mini-title" class="mini-title">Song Title</div>
+        <div id="mini-artist" class="mini-artist">Artist</div>
+      </div>
+      <div class="mini-controls">
+        <button id="mini-prev" class="mini-button" type="button" aria-label="Previous track">
+          ⏮
+        </button>
+        <button id="mini-play" class="mini-button" type="button" aria-label="Play / Pause">
+          ▶
+        </button>
+        <button id="mini-next" class="mini-button" type="button" aria-label="Next track">
+          ⏭
+        </button>
+      </div>
+      <div class="mini-progress-wrapper">
+        <div id="mini-current-time" class="mini-time">0:00</div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
